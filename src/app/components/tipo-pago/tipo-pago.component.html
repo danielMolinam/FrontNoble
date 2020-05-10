@@ -1,0 +1,54 @@
+<main role="main" class="container-fluid">
+    <div class="row text-center">
+        <div class="col-12">
+            <div class="tittle">
+                <img src="assets/images/title.png" class="mt-4">
+                <span class="titulo  ml-5 pl-5 mt-n2">Tipo de pago</span>
+            </div>
+        </div> 
+    </div>
+    <div class="row text-center ">
+        <div class="col-12 pt-5">
+            <hr>
+        </div>
+        <div class="col-4 br-solid">
+            <a href="#">
+                <img src="assets/images/Imagen2.png">
+            </a>
+        </div>         
+        <div class="col-8">
+            <select class="browser-default custom-select" name="slcTipoP" [(ngModel)]="seleccionado" (change)="tipoDoc()">
+                <option [value]="item" *ngFor="let item of taskTypeOptions">{{item}}</option>
+            </select>
+            <div class="card col-sm-5 col-md-6 offset-md-3" style="width: 27rem; margin-top: 10%;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-5 col-md-2">
+                        <button type="button" class="btn btn-primary btn-lg">Debito</button>
+                    </div>
+                    <div class="col-sm-5 col-md-2 offset-md-2">
+                        <button type="button" class="btn btn-primary btn-lg">Credito</button>
+                    </div>
+                    <div class="col-sm-5 col-md-2 offset-md-2">
+                        <button type="button" class="btn btn-primary btn-lg">Efectivo</button>
+                    </div>                   
+                  </div>
+                </div>
+            </div> 
+        </div>
+      </div>
+    <div class="col-12 pt-5">
+        <hr>
+    </div>    
+    <div class="row botonera">
+        <div class="col-6 text-center">
+            <button class="btn-back"  type="reset" routerLink="/detalleCompra" routerLinkActive="active">VOLVER</button>
+        </div>
+        <div class="col-6 text-center">
+            <button class="btn-next">ACEPTAR</button>
+        </div>
+    </div>
+</main>
+<footer>
+</footer>
+  

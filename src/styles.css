@@ -1,0 +1,234 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("assets/css/general.css");
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('assets/fonts/Segoe UI.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('assets/fonts/Segoe UI Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('assets/fonts/Segoe UI Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('assets/fonts/Segoe UI Bold Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Amsi pro ultra-Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Amsi pro ultra-Italic'), url('assets/fonts/AMSIPRO-ULTRAITALIC.woff') format('woff');
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 157px;
+    background-color: #006865;
+}
+
+header img {
+    margin-left: 10px
+}
+
+footer {
+    width: 100%;
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+    background-color: #858585;
+}
+
+input,
+button:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+.background-grey {
+    background-color: #F5F4F4;
+}
+
+.tittle {
+    height: 190px;
+    min-height: 190px;
+    padding: 10px;
+}
+
+.fas {
+    font-size: 70px;
+    color: #006865;
+}
+
+.img-inside {
+    position: fixed;
+    left: 368px;
+    top: 49%
+}
+h1{font-family: 'Segoe UI Bold';}
+
+.text-inside {
+    font-size: 61px;
+    color: #006865;
+    position: fixed;
+    left: 290px;
+    top: 74%;
+    font-family: 'Segoe UI Bold';
+    line-height: 100%;
+}
+
+.img-inside-2 {
+    position: fixed;
+    right: 380px;
+    top: 49%
+}
+
+.text-inside-2 {
+    font-size: 61px;
+    color: #006865;
+    position: fixed;
+    right: 350px;
+    top: 74%;
+    font-family: 'Segoe UI Bold';
+    line-height: 100%;
+}
+
+.title-header {
+    color: white;
+    font-size: 66px;
+    position: fixed;
+    top: 63px;
+    right: 200px;
+    font-family: 'Amsi pro ultra-Italic';
+}
+
+.ico-header {
+    position: fixed;
+    right: 40px;
+    top: 25px;
+}
+
+.float-box {
+    margin-top: 50px;
+    background-color: #5AB146;
+    width: max-content;
+    height: 108px;
+    /*display: padding: 30px;
+    color: white;*/
+}
+
+.titulo {
+    position: absolute;
+    color: white;
+    top: 36%;
+    text-align: center;
+    left: 33%;
+    font-size: 56px;
+    font-family: 'Segoe UI Bold';
+}
+
+.btn-back {
+    height: 70px;
+    width: 240px;
+    border-radius: 4px;
+    border: none;
+    background-color: #A4A2A2;
+    color: white;
+    font-family: 'Segoe UI Bold';
+    font-size: 28px;
+}
+
+.btn-next {
+    height: 70px;
+    width: 240px;
+    border-radius: 4px;
+    border: none;
+    background-color: #00722e;
+    color: white;
+    font-family: 'Segoe UI Bold';
+    font-size: 28px;
+}
+
+.botonera {
+    position: fixed;
+    width: 100%;
+    bottom: 100px;
+}
+
+.br-solid {
+    border-right: 1px solid darkgray;
+}
+
+input, .input-a {
+    margin:0 auto;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid darkgray;
+    text-align: center;
+    font-size: 47px;
+    color: #958F8F;
+}
+
+.input-WU {
+    height: 80px;
+    font-size: 60px;
+}
+
+.green {
+    color: #006865;
+}
+
+.cafe {
+    color: #804000;
+}
+
+.font-s {
+    font-family: 'Segoe UI Bold';
+}
+
+.grey {
+    color: #A4A2A2;
+}
+
+button:disabled {
+    background-color: #DEDEDE;
+}
+
+.form-group {
+    width: 100%;
+}
+
+@media (max-width: 1367px) {
+    header,
+    app-inicio,
+    app-recarga-telefono,
+    app-datos-telefono {
+        zoom: 71%!important;
+    }
+    .title-header {
+        top: 5%;
+    }
+}

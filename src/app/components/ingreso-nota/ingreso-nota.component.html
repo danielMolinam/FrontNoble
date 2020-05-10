@@ -1,0 +1,42 @@
+<main role="main" class="container-fluid">
+    <div class="row text-center">
+        <div class="col-12">
+            <div class="tittle">
+                <img src="assets/images/title.png" class="mt-4">
+                <span class="titulo  ml-5 pl-5 mt-n2">Ingrese nota de venta</span>
+            </div>
+        </div> 
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="row text-center ">
+            <div class="col-12 pt-5">
+                <hr>
+            </div>
+            <div class="col-4 br-solid">
+                <a href="#">
+                    <img src="assets/images/Imagen2.png">
+                </a>
+            </div>
+            
+            <div class="form-row col-8">
+                <div class="form-group">
+                    <h1 class="cafe">Nota de venta</h1>
+                    <input [matKeyboard]="'numeric'" type="text" formControlName="notaVenta" class="form-control shadow input-a" [ngClass]="{ 'is-invalid': submitted && f.notaVenta.errors }" [(ngModel)]="notaVenta"/>
+                    <div *ngIf="submitted && f.notaVenta.errors" class="invalid-feedback">
+                        <div *ngIf="f.notaVenta.errors.required">La nota de venta es requerida</div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pt-5">
+                <hr>
+            </div>
+        </div>
+        <div class="row botonera">
+            <div class="col-6  offset-md-6 text-center">
+                <button class="btn-next">ACEPTAR</button>
+            </div>
+        </div>
+    </form>
+</main>
+<footer>
+</footer>
